@@ -1430,54 +1430,53 @@
         ★ Flagship Project
       </div>
 
-      <h3 class="featured-title">NutriAgent</h3>
+      <h3 class="featured-title">AtlasMind</h3>
       <p class="featured-desc">
-        A production-grade <strong>multi-agent AI system</strong> for disease-aware nutritional guidance.
-        NutriAgent uses RAG to ground dietary recommendations in verified medical literature,
-        runs a self-correcting compliance loop, and slashed manual nutritional analysis by 95%.
-        Built with real-world deployment in mind — not a toy.
+        A <strong>multi-agent knowledge graph platform</strong> that transforms any document into a live, searchable mind map.
+        Ships a React observability dashboard with per-run LLM metrics, a 4-tier LLM fallback cascade for fault-tolerant serving,
+        and 6 decoupled microservices orchestrated over Redis Streams — built for production, not prototyping.
       </p>
 
       <div class="featured-metrics">
         <div class="metric">
-          <span class="metric-val">95%</span>
-          <span class="metric-label">Reduction in manual analysis</span>
+          <span class="metric-val">4-tier</span>
+          <span class="metric-label">LLM fallback cascade</span>
         </div>
         <div class="metric">
-          <span class="metric-val">RAG</span>
-          <span class="metric-label">Medically validated responses</span>
+          <span class="metric-val">6</span>
+          <span class="metric-label">Decoupled microservices</span>
         </div>
         <div class="metric">
-          <span class="metric-val">Multi</span>
-          <span class="metric-label">Agent orchestration</span>
+          <span class="metric-val">Redis</span>
+          <span class="metric-label">Event-driven messaging</span>
         </div>
       </div>
 
       <div class="tech-stack">
-        <span class="tech-tag">LangGraph</span>
-        <span class="tech-tag">LangChain</span>
-        <span class="tech-tag">GPT-4o</span>
-        <span class="tech-tag">Claude</span>
-        <span class="tech-tag">RAG</span>
-        <span class="tech-tag">ChromaDB</span>
         <span class="tech-tag">FastAPI</span>
-        <span class="tech-tag">React</span>
-        <span class="tech-tag">Tailwind</span>
+        <span class="tech-tag">LiteLLM</span>
+        <span class="tech-tag">React.js</span>
+        <span class="tech-tag">Redis Streams</span>
+        <span class="tech-tag">PostgreSQL</span>
+        <span class="tech-tag">Docker Compose</span>
+        <span class="tech-tag">Together.ai</span>
+        <span class="tech-tag">Groq</span>
+        <span class="tech-tag">Railway</span>
       </div>
     </div>
 
     <div class="featured-visual">
-      <div class="flow-step"><span class="dot"></span> User Query</div>
+      <div class="flow-step"><span class="dot"></span> Doc Ingestion</div>
       <span class="flow-arrow">→</span>
-      <div class="flow-step"><span class="dot"></span> RAG Retrieval</div>
+      <div class="flow-step"><span class="dot"></span> Agent Orchestration</div>
       <span class="flow-arrow">→</span>
-      <div class="flow-step"><span class="dot"></span> Agent Reasoning</div>
+      <div class="flow-step"><span class="dot"></span> LLM Cascade</div>
       <span class="flow-arrow">→</span>
-      <div class="flow-step"><span class="dot"></span> Compliance Check</div>
+      <div class="flow-step"><span class="dot"></span> Graph Extraction</div>
       <span class="flow-arrow">→</span>
-      <div class="flow-step"><span class="dot"></span> Self-Correction Loop</div>
+      <div class="flow-step"><span class="dot"></span> Redis Streams</div>
       <span class="flow-arrow">→</span>
-      <div class="flow-step"><span class="dot"></span> Medical Response</div>
+      <div class="flow-step"><span class="dot"></span> Live Mind Map</div>
     </div>
   </div>
 </section>
@@ -1490,50 +1489,51 @@
   <h2 class="section-title">Things I've built</h2>
 
   <div class="projects-grid">
-    <!-- Crop Yield Predictor -->
-    <div class="project-card">
-      <div class="project-num">01 / Python · MySQL · Pandas</div>
-      <h3 class="project-title">AI-Powered Crop Yield Predictor</h3>
-      <div class="project-highlight">
-        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/><path d="M12 8v4l3 3"/></svg>
-        Real-time weather integration
-      </div>
-      <p class="project-desc">
-        Location-aware advisory system that recommends optimal crops and seeds for farmers.
-        Structured MySQL schema covering soil composition, seasonal patterns, and live weather data.
-        Built to serve agricultural communities with actionable, data-driven guidance.
-      </p>
-      <div class="tech-stack" style="margin-top:auto">
-        <span class="tech-tag">Python</span>
-        <span class="tech-tag">MySQL</span>
-        <span class="tech-tag">HTML/CSS</span>
-        <span class="tech-tag">Pandas</span>
-      </div>
-    </div>
-
     <!-- AtlasMind -->
     <div class="project-card">
-      <div class="project-num">02 / React · FastAPI · Redis · Docker</div>
+      <div class="project-num">01 / FastAPI · LiteLLM · React · Redis · Docker</div>
       <h3 class="project-title">AtlasMind</h3>
       <div class="project-highlight">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-        Distributed Multi-Agent AI Platform
+        Multi-Agent Knowledge Graph & Mind-map Platform
       </div>
       <p class="project-desc">
-        Transforms any PDF or text document into an interactive knowledge graph and mind map.
-        Built on a resilient microservices architecture with an advanced LLM cascade and consensus engine
-        to extract concepts, relationships, and sentiment — offering deep document insights and a live,
-        searchable visual graph.
+        Built a React observability dashboard surfacing per-run LLM usage, ReAct retry counts, and fallback rates.
+        Implemented a 4-tier LLM cascade (Together.ai → Groq → Gemini → Ollama) via LiteLLM with Redis-backed rate limiting.
+        Containerized 6 microservices on Railway using Redis Streams, dead-letter queues, and distributed locking.
       </p>
       <div class="tech-stack" style="margin-top:auto">
-        <span class="tech-tag">React</span>
         <span class="tech-tag">FastAPI</span>
-        <span class="tech-tag">Redis</span>
-        <span class="tech-tag">Neon PostgreSQL</span>
         <span class="tech-tag">LiteLLM</span>
-        <span class="tech-tag">Groq</span>
-        <span class="tech-tag">Gemini</span>
+        <span class="tech-tag">React.js</span>
+        <span class="tech-tag">Redis Streams</span>
+        <span class="tech-tag">PostgreSQL</span>
         <span class="tech-tag">Docker</span>
+      </div>
+    </div>
+
+    <!-- Sentinel -->
+    <div class="project-card" style="--card-accent: var(--accent3);">
+      <div class="project-num">02 / Python · TypeScript · Neo4j · RabbitMQ · Turborepo</div>
+      <h3 class="project-title">Sentinel</h3>
+      <div class="project-highlight" style="background:rgba(255,107,107,0.08);border-color:rgba(255,107,107,0.2);color:var(--accent3);">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        Multi-Agent AI Codebase Health Platform
+      </div>
+      <p class="project-desc">
+        Full-stack AI platform: event-driven GitHub ingestion via RabbitMQ → Python AST engine (Tree-sitter) writing a dependency graph to Neo4j.
+        Security, Architecture, and Test-Gap agents each pair rule-based analysis with LLM findings. A Synthesizer cross-deduplicates and confidence-ranks results,
+        surfaced as a real-time WebSocket Health Score dashboard.
+      </p>
+      <div class="tech-stack" style="margin-top:auto">
+        <span class="tech-tag" style="color:var(--accent3);border-color:rgba(255,107,107,0.25);background:rgba(255,107,107,0.06);">Python</span>
+        <span class="tech-tag" style="color:var(--accent3);border-color:rgba(255,107,107,0.25);background:rgba(255,107,107,0.06);">Fastify</span>
+        <span class="tech-tag" style="color:var(--accent3);border-color:rgba(255,107,107,0.25);background:rgba(255,107,107,0.06);">Tree-sitter</span>
+        <span class="tech-tag" style="color:var(--accent3);border-color:rgba(255,107,107,0.25);background:rgba(255,107,107,0.06);">Neo4j</span>
+        <span class="tech-tag" style="color:var(--accent3);border-color:rgba(255,107,107,0.25);background:rgba(255,107,107,0.06);">RabbitMQ</span>
+        <span class="tech-tag" style="color:var(--accent3);border-color:rgba(255,107,107,0.25);background:rgba(255,107,107,0.06);">Prisma</span>
+        <span class="tech-tag" style="color:var(--accent3);border-color:rgba(255,107,107,0.25);background:rgba(255,107,107,0.06);">Redis</span>
+        <span class="tech-tag" style="color:var(--accent3);border-color:rgba(255,107,107,0.25);background:rgba(255,107,107,0.06);">Turborepo</span>
       </div>
     </div>
   </div>
@@ -1607,49 +1607,52 @@
       <div class="skill-cat-label">Languages</div>
       <div class="skill-tags">
         <span class="skill-tag featured">Python</span>
-        <span class="skill-tag">Java</span>
+        <span class="skill-tag featured">TypeScript</span>
         <span class="skill-tag featured">JavaScript</span>
-        <span class="skill-tag">MySQL</span>
+        <span class="skill-tag">Java</span>
+        <span class="skill-tag">SQL</span>
       </div>
     </div>
 
     <div class="skill-category">
-      <div class="skill-cat-label">Frameworks</div>
+      <div class="skill-cat-label">Frameworks & Runtimes</div>
       <div class="skill-tags">
-        <span class="skill-tag featured">React</span>
+        <span class="skill-tag featured">React.js</span>
+        <span class="skill-tag featured">FastAPI</span>
+        <span class="skill-tag">Fastify</span>
         <span class="skill-tag">Node.js</span>
         <span class="skill-tag">Flask</span>
-        <span class="skill-tag">FastAPI</span>
         <span class="skill-tag">Tailwind</span>
-        <span class="skill-tag">Streamlit</span>
-        <span class="skill-tag">Deno</span>
-        <span class="skill-tag">GraphQL</span>
+        <span class="skill-tag">Prisma</span>
+        <span class="skill-tag">Turborepo</span>
       </div>
     </div>
 
     <div class="skill-category">
-      <div class="skill-cat-label">AI / ML Stack</div>
+      <div class="skill-cat-label">AI / Agent Stack</div>
       <div class="skill-tags">
-        <span class="skill-tag featured">LangChain</span>
-        <span class="skill-tag featured">LangGraph</span>
-        <span class="skill-tag featured">RAG Systems</span>
-        <span class="skill-tag">ChromaDB</span>
-        <span class="skill-tag">TensorFlow</span>
-        <span class="skill-tag">Pandas</span>
+        <span class="skill-tag featured">LiteLLM</span>
+        <span class="skill-tag featured">Multi-Agent Systems</span>
+        <span class="skill-tag featured">RAG</span>
+        <span class="skill-tag">LangChain</span>
+        <span class="skill-tag">LangGraph</span>
+        <span class="skill-tag">Tree-sitter</span>
         <span class="skill-tag">GPT-4o</span>
+        <span class="skill-tag">Gemini</span>
       </div>
     </div>
 
     <div class="skill-category">
-      <div class="skill-cat-label">Tools & Specializations</div>
+      <div class="skill-cat-label">Infra & Data</div>
       <div class="skill-tags">
-        <span class="skill-tag">Git</span>
-        <span class="skill-tag">Postman</span>
-        <span class="skill-tag">Jira</span>
-        <span class="skill-tag">PyTest</span>
-        <span class="skill-tag featured">DSA</span>
-        <span class="skill-tag">Cybersecurity</span>
+        <span class="skill-tag featured">Docker</span>
+        <span class="skill-tag featured">Redis</span>
+        <span class="skill-tag featured">Neo4j</span>
+        <span class="skill-tag">RabbitMQ</span>
+        <span class="skill-tag">PostgreSQL</span>
+        <span class="skill-tag">Redis Streams</span>
         <span class="skill-tag">AWS</span>
+        <span class="skill-tag">Railway</span>
       </div>
     </div>
   </div>
